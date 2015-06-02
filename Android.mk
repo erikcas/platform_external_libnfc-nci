@@ -1,4 +1,3 @@
-ifeq ($(TARGET_USES_OS_NFC),true)
 # function to find all *.cpp files under a directory
 define all-cpp-files-under
 $(patsubst ./%,%, \
@@ -80,4 +79,3 @@ include $(BUILD_SHARED_LIBRARY)
 
 ######################################
 include $(call all-makefiles-under,$(LOCAL_PATH))
-endif
